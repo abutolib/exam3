@@ -12,8 +12,8 @@ class CategoryRouter{
   public Routers(){
     this.router.get('/categories',categoryController.getAllCategories)
     this.router.post('/categories',categoryController.postCategory)
-    // this.router.put('/categories',categoryController.putCategory)
-    // this.router.delete('/categories',categoryController.deleteCategory)
+    this.router.put('/categories',categoryController.putCategory)
+    this.router.delete('/categories',categoryController.deleteCategory)
   }
 }
 
